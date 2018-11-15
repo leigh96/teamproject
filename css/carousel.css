@@ -7,17 +7,9 @@ body {
   color: #5a5a5a;
 }
 
-#myCarousel img {
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-#myCarousel .btn-primary {
-  color: #fff;
-  background-color: #595959;
-  border-color: #333333;
+@font-face {
+    font-family: beforetherain;
+    src: url(fonts/BeforeTheRain_personal_use_demo.woff);
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -45,18 +37,18 @@ body {
   width: auto;
 }
 /* Overwriting navbar properties */
-#mynavbar .navbar .navbar-nav > li > a {
+.navbar-wrapper .navbar .navbar-nav > li > a {
   color: #9d9d9d;
 }
 
-#mynavbar .navbar .navbar-nav > .active > a,
+.navbar-wrapper .navbar .navbar-nav > .active > a,
 .navbar .navbar-nav > .active > a:hover,
 .navbar .navbar-nav > .active > a:focus {
   color: #fff;
   background-color: #000;
 }
 
-#mynavbar .navbar .navbar-nav > li > a:hover,
+.navbar-wrapper .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus {
   color: #fff;
   background-color: transparent;
@@ -64,6 +56,20 @@ body {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
+/* so image doesn't stretch*/
+#openingpic img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/*changing button colour*/
+#openingpic .btn-primary {
+  color: #fff;
+  background-color: #595959;
+  border-color: #333333;
+}
 
 /* Carousel base class */
 .carousel {
@@ -89,6 +95,12 @@ body {
 }
 
 /* Bump up size of carousel content */
+.carousel-caption h1 {
+  font-family: beforetherain;
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
 .carousel-caption p {
   margin-bottom: 100px;
   font-size: 21px;
