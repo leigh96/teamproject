@@ -112,6 +112,8 @@ img {
 </style>
 <body>
 
+<button onclick="goBack()">Go Back</button>
+
 <h2 style="text-align:center">Slideshow Gallery</h2>
 
 <div class="container">
@@ -199,6 +201,11 @@ img {
 </div>
 
 <script>
+
+function goBack() {
+    window.history.back();
+}
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
