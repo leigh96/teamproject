@@ -21,6 +21,18 @@ body {
     font-family: unrulyness;
     src: url(fonts/unrulyness.woff);
 }
+/* This needs fixing, media action not working */
+
+@media screen and (max-width: 1000px) {
+  .carousel-caption h1 {
+    font-size: 5px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .carousel-caption p {
+    font-size: 5px;
+  }
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
