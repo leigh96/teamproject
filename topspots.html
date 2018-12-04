@@ -4,32 +4,66 @@
 <style>
 
 body {
-    font-family: Arial;
-    margin: 1;
-    background-color: white;
+  text: center;
 }
 
-h1 {
- color: black;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-ol{
-  color: black;
+a {
+  text-decoration:none;
+  color:blak;
 }
 
-ul {
-    color: black;
-    border-left: 5px solid purple;
-    background-color: #D8BFD8;
-    list-style-type: none;
-    padding: 10px 20px;
+nav {
+  margin:25px;
+  width:350px;
+  border:1px solid grey;
+  padding:1em;
+
 }
 
-ul li {
-    background: #E6E6FA;
-    padding: 5px;
-    margin-left: 35px;
+li {
+   list-style:none;
 }
+
+a {
+  display:block;
+}
+
+nav ol li {
+  line-height:2em;
+}
+
+/* borders */
+
+li {
+  border-bottom:1px solid black;
+}
+
+li:first-child {
+  border-top:1px solid black
+}
+
+ul ul li:last-child {
+  border:none;
+}
+
+/* spacing for anchor tags */
+
+nav ol ul a {
+  margin-left:15px;
+}
+
+nav ol ul a {
+  margin-left:30px;
+}
+
 </style>
 </head>
 <body>
@@ -38,6 +72,7 @@ ul li {
 
 <h1>26 Best London Photography Spots</h1>
 
+<nav role='navigation'>
 <ol type="1">
   <li><strong>Neal's Yard</strong>
     <ul>
@@ -260,7 +295,7 @@ ul li {
 </p>
 
 </ol>
-
+</nav>
 <script>
 
 function goBack() {
