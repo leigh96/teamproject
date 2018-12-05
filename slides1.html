@@ -1,240 +1,137 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial;
-  margin: 0;
-  background-color: #1B1B1B;
-}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Architectural Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/slide1.css" rel="stylesheet">
+  </head>
 
-h2 {
-  color: white;
-}
+  <body>
+    <button onclick="goBack()">Go Back</button>
 
-* {
-  box-sizing: border-box;
-}
+      <h2 style="text-align:center">Slideshow Gallery</h2>
 
-img {
-  vertical-align: middle;
-  align: middle;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 55%;
-  max-height: 55%;
-}
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 9</div>
+          <img src="images/Architectural9.jpg" style="width:100%">
+        </div>
 
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
+        <div class="mySlides">
+          <div class="numbertext">2 / 9</div>
+          <img src="images/Architectural2.jpg" style="width:100%">
+        </div>
 
-/* Hide the images by default */
-.mySlides {
-  display: block;
-  size: 50px;
-}
+        <div class="mySlides">
+          <div class="numbertext">3 / 9</div>
+          <img src="images/Architectural3.jpg" style="width:100%">
+        </div>
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
+        <div class="mySlides">
+          <div class="numbertext">4 / 9</div>
+          <img src="images/Architectural4.jpg" style="width:100%">
+        </div>
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+        <div class="mySlides">
+          <div class="numbertext">5 / 9</div>
+          <img src="images/Architectural5.jpg" style="width:100%">
+        </div>
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+        <div class="mySlides">
+          <div class="numbertext">6 / 9</div>
+          <img src="images/Architectural6.jpg" style="width:100%">
+        </div>
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+        <div class="mySlides">
+          <div class="numbertext">7 / 9</div>
+          <img src="images/Architectural7.jpg" style="width:100%">
+        </div>
 
-/* Number text (1/24 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+        <div class="mySlides">
+          <div class="numbertext">8 / 9</div>
+          <img src="images/Architectural8.jpg" style="width:100%">
+        </div>
 
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
+        <div class="mySlides">
+          <div class="numbertext">9 / 9</div>
+          <img src="images/Architectural1.jpg" style="width:100%">
+        </div>
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="images/Architectural9.jpg" style="width:100%" onclick="currentSlide(1)" alt="Hyde Park">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Architectural2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Southwark">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Architectural3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Reading">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Architectural4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Leadenhall Market">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Architectural5.jpg" style="width:100%" onclick="currentSlide(5)" alt="View from Tate Modern">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Architectural6.jpg" style="width:100%" onclick="currentSlide(6)" alt="St. Paul from Millenium Bridge">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Architectural7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Brick Lane">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Architectural8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Brick Lane">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Architectural1.jpg" style="width:100%" onclick="currentSlide(9)" alt="Shard">
+          </div>
+        </div>
+      </div>
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
-</style>
-<body>
+    <script>
 
-<button onclick="goBack()">Go Back</button>
+    function goBack() {
+      window.history.back();
+    }
 
-<h2 style="text-align:center">Slideshow Gallery</h2>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 9</div>
-    <img src="images/Architectural9.jpg" style="width:100%">
-  </div>
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 9</div>
-    <img src="images/Architectural2.jpg" style="width:100%">
-  </div>
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 9</div>
-    <img src="images/Architectural3.jpg" style="width:100%">
-  </div>
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  </script>
 
-  <div class="mySlides">
-    <div class="numbertext">4 / 9</div>
-    <img src="images/Architectural4.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5 / 9</div>
-    <img src="images/Architectural5.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">6 / 9</div>
-    <img src="images/Architectural6.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">7 / 9</div>
-    <img src="images/Architectural7.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">8 / 9</div>
-    <img src="images/Architectural8.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">9 / 9</div>
-    <img src="images/Architectural1.jpg" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="images/Architectural9.jpg" style="width:100%" onclick="currentSlide(1)" alt="Hyde Park">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Architectural2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Southwark">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Architectural3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Reading">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Architectural4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Leadenhall Market">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Architectural5.jpg" style="width:100%" onclick="currentSlide(5)" alt="View from Tate Modern">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Architectural6.jpg" style="width:100%" onclick="currentSlide(6)" alt="St. Paul from Millenium Bridge">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Architectural7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Brick Lane">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Architectural8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Brick Lane">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Architectural1.jpg" style="width:100%" onclick="currentSlide(9)" alt="Shard">
-    </div>
-  </div>
-</div>
-
-<script>
-
-function goBack() {
-    window.history.back();
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-
-</body>
+  </body>
 </html>
