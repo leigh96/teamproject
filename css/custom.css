@@ -10,7 +10,8 @@ body {
 @font-face {
     font-family: modern;
     src: url(fonts/modern.woff) format('woff'),
-         url(fonts/modern.ttf) format('truetype');
+         url(fonts/modern.ttf) format('truetype'),
+         url(font/modern.woff2);
 }
 
 @font-face {
