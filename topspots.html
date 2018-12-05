@@ -1,276 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='css/topspots.css' rel='stylesheet'>
-  <link href='css/bootstrap.css' rel='stylesheet'>
+<style>
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration:none;
+  color:black;
+}
+
+nav {
+  margin:50px;
+  width:800px;
+  border:2px solid grey;
+  padding:1em;
+
+}
+
+li {
+   list-style:none;
+}
+
+a {
+  display:block;
+}
+
+nav ol li {
+  line-height:2em;
+}
+
+/* borders */
+
+li {
+  border-bottom:1px solid black;
+}
+
+li:first-child {
+  border-top:1px solid black
+}
+
+ul ul li:last-child {
+  border:none;
+}
+
+/* spacing for anchor tags */
+
+nav ol ul a {
+  margin-left:15px;
+}
+
+nav ol ul a {
+  margin-left:30px;
+}
+
+</style>
 </head>
 <body>
-  <div class="background">
-    <img src='images/bgp.jpg' alt='background'>
-  </div>
 
-  <div id="all">
-    <div class="navbar-wrapper" id='home'>
-      <div class="container">
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="rachel.html">Rachel</a></li>
-                <li><a href="leigh.html">Leigh</a></li>
-                <li><a href="guzide.html">Güzide</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
+<button onclick="goBack()">Go Back</button>
 
-    <div class='title'>
-      <h1>26 Best London Photography Spots</h1>
-    </div>
+<h1>26 Best London Photography Spots</h1>
 
-    <div class='goback'>
-      <button onclick="goBack()" type="button" class="btn btn-primary">Go Back</button>
-    </div>
+<nav role='navigation'>
+<ol type="1">
+  <li><strong>Neal's Yard</strong>
+    <ul>
+  <li><strong>Best time for pics:</strong> Day </li>
+  <li><strong>Cost:</strong> Free </li>
+  <li><strong>Location:</strong> Neal's Yard, London WC2H</li>
+</ul>
+</li>
+&nbsp
+<li><strong>Tower Bridge</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Blue hour/night </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> London, E1W 1LA </li>
+</ul>
+</li>
+&nbsp
+<li><strong>St Paul's Cathedral</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Anytime </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> 1 New Change, London EC4M 9AF </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Leadenhall Market</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Day </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Leadenhall Market, Gracechurch St, London EC3V 1LT</li>
+</ul>
+</li>
+&nbsp
+<li><strong>View from the Shard</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> All times </li>
+<li><strong>Cost:</strong> Ticketed </li>
+<li><strong>Location:</strong> The View from The Shard, Railway Approach, London SE1 9SG </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Kings Cross Light Tunnel</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Anytime </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Tunnel Collier St, Kings Cross, London N1 9BE </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Notting Hill and Portobello Road</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Day </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Portobello Rd and Hillgate PI </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Piccadilly Circus</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Blue hour/night </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Piccadilly Circus </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Painted Gallery</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Day </li>
+<li><strong>Cost:</strong> Ticketed </li>
+<li><strong>Location:</strong> Painted Gallery, King William Walk, London, Greenwich SE10 9NN </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Girl and Dolphin Statue and Tower Bridge</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Sunset-night </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> North East side of Tower Bridge, London E1W 1LD </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Houses of Parliament</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Anytime </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Westminster, London SW1A 0AA </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Canary Wharf</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Anytime </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Canary Wharf </li>
+</ul>
+</li>
+&nbsp
+<li><strong>London Bridge Station</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Anytime </li>
+<li><strong>Cost:</strong> Subway fare </li>
+<li><strong>Location:</strong> 21 Duke St Hill, London SE1 2SW </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Westminster Bridge</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Anytime </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Westminster Bridge </li>
+</ul>
+</li>
+&nbsp
+<li><strong> Millennium Bridge </strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Sunrise and night </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Millennium Bridge, Thames Embankment, London SE1 </li>
+</ul>
+</li>
+&nbsp
+<li><strong> British Museum </strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Day </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> British Museum, Great Russell St, London WC1B 3DG </li>
+</ul>
+</li>
+&nbsp
+<li><strong> The London Eye </strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Night in the winter</li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> London Eye, Lambeth, London SE1 7PB </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Tate Britain</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Day </li>
+<li><strong>Cost:</strong> Ticketed </li>
+<li><strong>Location:</strong> Tate Britain, Millbank, Westminster, London SW1P 4RG </li>
+</ul>
+</li>
+&nbsp
+<li><strong>St. Pancreas Renaissance Hotel - Grand Staircase</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Anytime </li>
+<li><strong>Cost:</strong> Night at hotel or ask permission </li>
+<li><strong>Location:</strong> Euston Rd, Kings Cross, London NW1 2AR </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Sky Garden</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Anytime </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> 1 Sky Garden Walk, London, EC3M 8AF </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Albert Hall</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Evening </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Albert Hall, Kensington Gore, Kensington, London SW7 2AP </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Camden Town</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Day </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Camden Town, London NW1 </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Little Venice</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Day </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Blomfield Road, London, W9 2PF </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Greenwich park</strong>
+  <ul>
+<li><strong>Best time for pics:</strong> Golden hour </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> London, SE10 8QY </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Primrose Hill</strong>
+<ul>
+<li><strong>Best time for pics:</strong> Golden hour / Day / Sunset </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> London, NW1 7SX </li>
+</ul>
+</li>
+&nbsp
+<li><strong>Shoreditch Street Art</strong>
+<ul>
+<li><strong>Best time for pics:</strong> Day </li>
+<li><strong>Cost:</strong> Free </li>
+<li><strong>Location:</strong> Brick Ln, London </li>
+</ul>
+</li>
+&nbsp
+<h1>London Photography Tips</h1>
+<p>
+  <ul>
+    <li>Keep an eye out for puddles and other reflective objects. As well as making the picture look cool, the reflections also help frame the picture square or portrait for Instagram.</li>
+    <li>You can walk between many of the suggested spots, such as if you start at London Bridge and the Shard and then walk along the River.</li>
+    <li>Use a tripod for night photography, but of course be wary of pedestrians and traffic.</li>
+    <li>Try going out early to avoid the crowds and potentially get amazing light.</li>
+    <li>Scout out your sunset spot. The sun often sets north of the river.</li>
+    <li>Use a long exposure for day photographs if you wanted to create a sense of motion with traffic and people.</li>
+  </ul>
+</p>
 
-    <div class='list'>
-      <ol type="1">
-        <li><strong>Neal's Yard</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Day </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Neal's Yard, London WC2H</li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Tower Bridge</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Blue hour/night </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> London, E1W 1LA </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>St Paul's Cathedral</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Anytime </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> 1 New Change, London EC4M 9AF </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Leadenhall Market</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Day </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Leadenhall Market, Gracechurch St, London EC3V 1LT</li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>View from the Shard</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> All times </li>
-            <li><strong>Cost:</strong> Ticketed </li>
-            <li><strong>Location:</strong> The View from The Shard, Railway Approach, London SE1 9SG </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Kings Cross Light Tunnel</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Anytime </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Tunnel Collier St, Kings Cross, London N1 9BE </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Notting Hill and Portobello Road</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Day </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Portobello Rd and Hillgate PI </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Piccadilly Circus</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Blue hour/night </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Piccadilly Circus </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Painted Gallery</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Day </li>
-            <li><strong>Cost:</strong> Ticketed </li>
-            <li><strong>Location:</strong> Painted Gallery, King William Walk, London, Greenwich SE10 9NN </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Girl and Dolphin Statue and Tower Bridge</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Sunset-night </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> North East side of Tower Bridge, London E1W 1LD </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Houses of Parliament</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Anytime </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Westminster, London SW1A 0AA </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Canary Wharf</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Anytime </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Canary Wharf </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>London Bridge Station</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Anytime </li>
-            <li><strong>Cost:</strong> Subway fare </li>
-            <li><strong>Location:</strong> 21 Duke St Hill, London SE1 2SW </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Westminster Bridge</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Anytime </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Westminster Bridge </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong> Millennium Bridge </strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Sunrise and night </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Millennium Bridge, Thames Embankment, London SE1 </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong> British Museum </strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Day </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> British Museum, Great Russell St, London WC1B 3DG </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong> The London Eye </strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Night in the winter</li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> London Eye, Lambeth, London SE1 7PB </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Tate Britain</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Day </li>
-            <li><strong>Cost:</strong> Ticketed </li>
-            <li><strong>Location:</strong> Tate Britain, Millbank, Westminster, London SW1P 4RG </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>St. Pancreas Renaissance Hotel - Grand Staircase</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Anytime </li>
-            <li><strong>Cost:</strong> Night at hotel or ask permission </li>
-            <li><strong>Location:</strong> Euston Rd, Kings Cross, London NW1 2AR </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Sky Garden</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Anytime </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> 1 Sky Garden Walk, London, EC3M 8AF </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Albert Hall</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Evening </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Albert Hall, Kensington Gore, Kensington, London SW7 2AP </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Camden Town</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Day </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Camden Town, London NW1 </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Little Venice</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Day </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Blomfield Road, London, W9 2PF </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Greenwich park</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Golden hour </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> London, SE10 8QY </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Primrose Hill</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Golden hour / Day / Sunset </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> London, NW1 7SX </li>
-          </ul>
-        </li>
-        &nbsp
-        <li><strong>Shoreditch Street Art</strong>
-          <ul>
-            <li><strong>Best time for pics:</strong> Day </li>
-            <li><strong>Cost:</strong> Free </li>
-            <li><strong>Location:</strong> Brick Ln, London </li>
-          </ul>
-        </li>
-        &nbsp
-      </ol>
-    </div>
-    <div class="list">
-      <h1>London Photography Tips</h1>
-      <p>
-        <ul>
-          <li>Keep an eye out for puddles and other reflective objects. As well as making the picture look cool, the reflections also help frame the picture square or portrait for Instagram.</li>
-          <li>You can walk between many of the suggested spots, such as if you start at London Bridge and the Shard and then walk along the River.</li>
-          <li>Use a tripod for night photography, but of course be wary of pedestrians and traffic.</li>
-          <li>Try going out early to avoid the crowds and potentially get amazing light.</li>
-          <li>Scout out your sunset spot. The sun often sets north of the river.</li>
-          <li>Use a long exposure for day photographs if you wanted to create a sense of motion with traffic and people.</li>
-        </ul>
-      </p>
-    </div>
-  </div>
+</ol>
+</nav>
+<script>
 
-  <script>
-
-  function goBack() {
+function goBack() {
     window.history.back();
-  }
+}
 
-  </script>
+</script>
+
 </body>
 </html>

@@ -8,6 +8,11 @@ body {
 }
 
 @font-face {
+    font-family: beforetherain;
+    src: url(fonts/BeforeTheRain.woff);
+}
+
+@font-face {
     font-family: modern;
     src: url(fonts/modern.woff);
 }
@@ -39,6 +44,10 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
+}
+
+#aboutmenavbar {
+  background-image: url(images/ryan-holloway-273158s.jpg);
 }
 
 /* Flip around the padding for proper display in narrow viewports */
