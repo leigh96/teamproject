@@ -53,6 +53,7 @@ body {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
+
 /* Overwriting navbar properties */
 .navbar-wrapper .navbar .navbar-nav > li > a {
   color: #9d9d9d;

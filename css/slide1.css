@@ -94,6 +94,14 @@ img {
 .column {
   float: left;
   width: 16.66%;
+  height: 200px;
+}
+
+.column > img {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 /* Add a transparency effect for thumnbail images */
