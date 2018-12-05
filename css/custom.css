@@ -1,0 +1,161 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+@font-face {
+    font-family: beforetherain;
+    src: url(fonts/BeforeTheRain.woff);
+}
+
+@font-face {
+    font-family: modern;
+    src: url(fonts/modern.woff);
+}
+
+@font-face {
+    font-family: unrulyness;
+    src: url(fonts/unrulyness.woff);
+}
+/* This needs fixing, media action not working */
+
+@media screen and (max-width: 1000px) {
+  .carousel-caption h1 {
+    font-size: 5px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .carousel-caption p {
+    font-size: 5px;
+  }
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+#aboutmenavbar {
+  background-image: url(images/ryan-holloway-273158s.jpg);
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+/* Overwriting navbar properties */
+.navbar-wrapper .navbar .navbar-nav > li > a {
+  color: #9d9d9d;
+}
+
+.navbar-wrapper .navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #000;
+}
+
+.navbar-wrapper .navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* so image doesn't stretch*/
+#openingpic img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* Carousel base class */
+.carousel {
+  height: 700px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 700px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 700px;
+}
+
+/* Bump up size of carousel content */
+.carousel-caption h1 {
+  position: absolute;
+  right: 0%;
+  bottom: 300px;
+  left: 0%;
+  font-family: unrulyness;
+  font-size: 100px;
+  text-shadow: none;
+  text-align: center;
+}
+
+.carousel-caption p {
+  position: absolute;
+  right: 15%;
+  bottom: 100px;
+  left: 15%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: modern;
+  font-size: 21px;
+  text-align: center;
+  line-height: 1.4;
+  text-shadow: none;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.featurette > .albumimage {
+  height: 300px;
+  width: 450px;
+  object-fit: cover;
+  overflow: hidden;
+}

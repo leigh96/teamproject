@@ -1,15 +1,103 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Title</title>
-    </head>
-    <body>
-      <h1>
-      Hello World!
-      </h1>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our HTML Group Project</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper" id='home'>
+      <div class="container">
+        <nav class="navbar navbar-static-top">
+          <div class="container">
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="rachel.html">Rachel</a></li>
+                <li><a href="leigh.html">Leigh</a></li>
+                <li><a href="guzide.html">Güzide</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
 
-      <p>
-      This is a paragraph
-      </p>
-    </body>
-<html>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="openingpic" class="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="first-slide" src='images/karl-jk-hedin-482509-unsplash.jpg' alt='Titlepic'>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>This is for our HTML group project.</h1>
+              <p>It's like a blog post where we each have one page and write about whatever we want. Life, love, food, travel, all that good stuff.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /.carousel -->
+
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- START THE FEATURETTES -->
+      <div class="row featurette">
+        <div class="col-md-7" id='originals'>
+          <h2 class="featurette-heading"><a href="rachel.html">Rachel Duan.</a> <span class="text-muted">An ordinary Chinese girl.</span></h2>
+          <p class="lead">Hi, the original introduction I wrote was "Just your nice nerdy friend. Likes standup comedy and Japanese food. Ideally would like to travel more. Looking for a beatboxer for the a capella choir that she's in. Blah blah blah", but I thought maybe I should write something of more substance. So hi, I'm Rachel, a Chinese girl who somehow has a Canadian passport and is now in UK, who gets melancholy sometimes and write songs about how sad she is because she watched too much BoJack Horseman and decided that she, too, 'fetishizes her sadness', which is not true, and apparenlty, who talks in third person now. Anyways, there are some music that I wrote/covered on my page. Click my name to see more.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block img-rounded" src="images/rachel.jpg" alt="Rachel Image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading"><a href="leigh.html">Leigh Rowland.</a> <span class="text-muted">A Northern girl living in London.</span></h2>
+          <p class="lead">Hey I'm Leigh. I don't have much to say here. I'm trying to study Maths and Economimcs but it's proving pretty difficult.</p>
+          <p class="lead">I have 2 jobs and we all know how time consuming LSE is so i don't get much free time, but when I do, I fill it with some kind of sport and the occassional (weekly) trip to zoo bar. </p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block img-rounded" src="images/leigh.jpg" alt="leigh">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7" id='covers'>
+          <h2 class="featurette-heading"><a href="guzide.html">Güzide Sofi. </a><span class="text-muted">Cypriot studying in London.</span></h2>
+          <p class="lead">(PS!!!!!!: I wrote this under the influence of pain killers and cough syrup so don't judge, its cheesy af) Hey, this is our homepage, so apparently I have to say something about myself. Sometimes, it is really hard to introduce yourself because you know yourself so well that you do not know where to start with and how you can tell people a lot about yourself without saying much. Here goes nothing.</p>
+
+          <p class="lead">There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen; I like to sleep, I like to walk; I like to explore, I like to drive.</p>
+
+          <p class="lead">I like to watch the sunset and gaze at the moonlight in the middle of the night when I cannot sleep. I like to smell the wind coming from the ocean, especially on a particularly hot day. I like to look at the clouds in the sky with a blank mind, just laying at a random park.</p>
+
+          <p class="lead">I always wanted to be a great photographer, like Ansel Adams or Dorothea Lange. They have influenced millions of people through their photographs and still to this day, they have such a huge impact on people’s lives. I also wanted to be a great mathematician like Pythagoras or John Forbes Nash Jr. Of course, I am nowhere close to these people. I am just someone who is studying Mathematics, doing research and taking photographs in the remaining of her time. However, my dream is still alive and I will always try to be the best version of myself.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block img-rounded" src="images/guzide.jpg" alt="guzide">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+  </body>
+</html>
