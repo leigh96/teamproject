@@ -9,16 +9,17 @@ body {
 
 @font-face {
     font-family: modern;
-    src: url(fonts/modern.woff) format('woff'),
-         url(fonts/modern.ttf) format('truetype'),
-         url(font/modern.woff2);
+    src: url(font/modern.woff2) format('woff2'),
+         url(fonts/modern.woff) format('woff'),
+         url(fonts/modern.ttf) format('truetype');
 }
 
 @font-face {
     font-family: unrulyness;
     src: url(fonts/unrulyness.woff) format('woff'),
          url(fonts/unrulyness.ttf) format('truetype'),
-         url(fonts/unrulyness-2.woff) format('woff');
+         url(fonts/unrulyness-2.woff) format('woff'),
+         url(fonts/backup-1.woff) format('woff');
 }
 /* This needs fixing, media action not working */
 
