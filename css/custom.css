@@ -129,6 +129,7 @@ body {
   text-align: center;
   line-height: 1.4;
   text-shadow: none;
+  letter-spacing: 0.04em;
 }
 
 /* Featurettes
