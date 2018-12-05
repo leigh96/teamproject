@@ -9,12 +9,12 @@ body {
 
 /* This needs fixing, media action not working */
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   .carousel-caption h1 {
     font-size: 5px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   .carousel-caption p {
     font-size: 5px;
   }
